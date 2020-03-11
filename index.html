@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html>
+<!---------------------------------------------------------------------------------------------------------------------HEAD-------------------------------------------------------------------------------------------------------------------->
+ 	<head>
+
+ 	<!-- style.css Datei aufrufen -->
+ 	<link rel="stylesheet"	href="stylesheet.css">
+
+ 	<!-- Website Icon ändern -->
+ 	<link rel="shortcut icon" href="https://cdn.arstechnica.net/wp-content/uploads/2016/02/5718897981_10faa45ac3_b-640x624.jpg" type="image/x-icon"/>
+
+ 	<!-- Kodierung -->
+ 	<meta charset="utf-8">
+
+ 	<!-- Seitennamen ändern -->	
+ 	<title>Meine erste Seite</title>
+
+ </head>
+<!--------------------------------------------------------------------------------------------------------------------BODY--------------------------------------------------------------------------------------------------------------------->
+
+<!-- body -> Der ganze Text, Bilder, Grafiken, ... -->
+ <body>
+
+<!-- Überschrift 2. Grades-->
+<h2>Wikipedia</h2>
+
+<!-- Navigationsbar 1 nach unten(style.css(Zeile 110)) -->
+<ul>
+  <li><a href="#footer">Nach unten</a></li>
+</ul>
+
+<!-- Zieht eine Linie -->
+<hr>
+
+<!-- p = paragraph, a href = links zum paragraph -->
+<p><a href="https://de.wikipedia.org/wiki/Wikipedia">Wikipedia</a> ist ein am 15. Januar 2001 gegründetes gemeinnütziges Projekt zur Erstellung einer Enzyklopädie in zahlreichen Sprachen mit Hilfe des Wikiprinzips. Gemäß Publikumsnachfrage und Verbreitung gehört Wikipedia unterdessen zu den Massenmedien.</p>
+
+<p>Die Online-Enzyklopädie bietet freie, also kostenlose und zur Weiterverbreitung gedachte, unter lexikalischen Einträgen (Lemmata) zu findende Artikel sowie auch Portale nach Themengebieten. Das Ziel ist gemäß dem Gründer Jimmy Wales, „eine frei lizenzierte und hochwertige Enzyklopädie zu schaffen und damit lexikalisches Wissen zu verbreiten“.<a href="https://de.wikipedia.org/wiki/Wikipedia#cite_note-3">[3]</p></a>
+
+<p>Sie lag im September 2018 auf dem fünften Platz der am häufigsten besuchten Websites. In Deutschland und Österreich rangierte sie auf Platz sieben, in der Schweiz und in den USA auf Platz fünf. Die Website ist dabei weltweit, genauso wie in den deutschsprachigen Staaten, die einzige nichtkommerzielle Website unter den ersten 50. Ihre Finanzierung erfolgt durch Spenden.</p>
+
+<p>Bis zum 18. Jubiläum am 15. Januar 2019 wurden über 49,3 Millionen Artikel der Wikipedia in annähernd 300 Sprachen in Mehrautorenschaft verfasst. Darüber hinaus werden die Artikel nach dem Prinzip des kollaborativen Schreibens fortwährend bearbeitet und diskutiert. Das Mentorenprogramm[5] bietet neuen Beitragswilligen kostenfrei ehrenamtliche Einstiegshelfer zur Auswahl an. Fast alle Inhalte der Wikipedia stehen unter freien Lizenzen.</p>
+
+<p>Betreiberin ist die Wikimedia Foundation (WMF), eine Non-Profit-Organisation mit Sitz in San Francisco in den USA. In vielen Ländern der Welt gibt es zudem unabhängige Wikimedia-Vereine, die mit der Stiftung zusammenarbeiten, Wikipedia jedoch nicht betreiben; im deutschen Sprachraum sind dies die 2004 gegründete Wikimedia Deutschland (WMDE), seit 2006 in der Schweiz die Wikimedia CH (WMCH) sowie die zwei Jahre später entstandene Wikimedia Österreich (WMAT).</p>
+
+
+<!-- Formatierungen -->
+<cite>cite</cite>
+<blockquote>blockquote</blockquote>
+<caption>caption</caption><br>
+<strike>strike</strike><br>
+
+<!-- Zieht eine Linie -->
+<hr>
+
+<b>Bilder:</b>
+
+   <a href="https://de.wikipedia.org/wiki/Wikipedia">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/360px-Wikipedia-logo-v2.svg.png" alt="Wikipedia" align="middle" width= "150px" height="150px">
+	</a>
+
+	<a href="https://de.wikipedia.org/wiki/Hauskatze">
+		<img src="https://www.royal-canin.de/fileadmin/_processed_/d/d/csm_Katze_Katzenerziehung_Wie_b67e7262d6.png" alt="Katze" width="150px"; height="150px" align="middle">
+	</a>						
+
+<!-- Zieht eine Linie -->
+<hr>
+
+<!-- Javascript bei main.js -->
+<p>Bitte geben Sie ihr Namen und Passwort ein:</p>
+
+<form name="form" method="post" action="#" onsubmit="return validateform()" >
+Name:     <input type="text" name="name"><br/>
+Passwort: <input type="text" name="password"><br/>  
+<input type="submit" value="Check">  
+</form>  
+
+<!-- Zieht eine Linie -->
+<hr>
+
+<!-- Javascript bei main.js -->
+<p>Bitte geben Sie ihre Email ein:</p>
+
+<form name="myform"  method="post" action="#" onsubmit="return validateemail();">  
+Email: <input type="text" name="email"><br/>  
+<input type="submit" value="Check">  
+</form> 
+
+<!-- Zieht eine Linie -->
+<hr>
+
+<!-- Javascript bei main.js -->
+<p>Bitte geben Sie eine Zahl zwischen 1 und 10 ein:</p>
+
+<form class="numbercheck">
+	<input class="numbercheck-zahl">
+	<button type="submit">Check</button>
+</form>
+
+<form class="numbercheck">
+	<input class="numbercheck-zahl">
+	<button type="submit">Check</button>
+</form>
+
+<p id="demo"></p>
+
+<!-- Zieht eine Linie -->
+<hr>
+
+<!-- Navigationsbar nach oben (style.css) -->
+<ul>
+  <li><a class="active" href="#">Nach oben</a></li>
+</ul>
+
+<hr>
+
+<div id="animation"></div>
+<!-- Position von footer bestimmt wo man hinspringt -->
+<footer id= "footer" ></footer>
+
+<!-- sctipt Datei aufrufen -->
+<script src="main.js"></script>
+
+ </body>
+ <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ </html>

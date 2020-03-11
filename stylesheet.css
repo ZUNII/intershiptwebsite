@@ -1,0 +1,80 @@
+
+ 		html {
+ 			background-color: #FFFFFF;
+ 		}
+
+ 		body {
+ 			padding: 0 10vh 10vh 10vh;
+ 			border: 5px solid #581845;
+ 			background: url("https://static1.squarespace.com/static/588a2c90d1758e07eef1b482/t/5903a736ebbd1af70c2919eb/1493411651772/gradient_bg.png?format=1500w"); 
+ 			background-repeat: repeat-x;
+ 		}
+ 		h2 {
+ 			text-align: center;
+ 			text-decoration: underline;
+ 			text-shadow: 2px 2px 5px #FFFFFF;
+ 		}
+ 		p {
+ 			font-family: Verdana;
+ 		}
+ 		a:hover {
+ 			background-color: yellow;
+ 			text-shadow: 1px 1px 1px black;	
+ 		}
+ 		footer {
+			margin-top: 40vh; 			
+ 		}	
+ 		ul {
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #333;
+}
+
+		li {
+  			float: left;
+}
+
+		li a {
+  			display: block;
+  			color: white;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+}
+
+		a:hover:not(.active) {
+  			background-color: #111;
+}
+
+		.active {
+  			background-color:#333;
+}
+		#animation {
+  			width: 100px;
+  			height: 100px;
+  			background: red;
+  			position: relative;
+  			-webkit-animation-name: test;
+  			-webkit-animation-duration: 4s;
+  			-webkit-animation-iteration-count: infinite;
+  			-webkit-transition: width 2s, height 2s, 
+  			-webkit-transform 2s;
+  			transition: width 2s, height 2s, transform 1s;
+}
+
+		div:hover {
+  			width: 200px;
+  			height: 200	px;
+  			-webkit-transform: rotate(360deg);	
+  			transform: rotate(360deg);
+}
+
+		@keyframes test {
+  			0%   {background-color:red; left:0px; top:0px;}
+  			25%  {background-color:blue; left:200px; top:200px;}	
+  			50%  {background-color:yellow; left:0px; top:200px;}
+  			75%  {background-color:green; left:200px; top:0px;}
+  			100% {background-color:red; left:0px; top:0px;}
+}
